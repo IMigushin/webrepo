@@ -1,0 +1,136 @@
+<!DOCKTYPE HTML>
+<html lang="eng-US">
+<head>
+	<title>Nat's Web Diary</title>
+	<meta charset="UTF-8">
+	<script> <!-->Script for progress bar managment at paragraph "Books & Audiobooks": increase value<-->
+		function backStep(progressBar) {
+			if(document.getElementById(progressBar).value > 0) {
+				document.getElementById(progressBar).value -= 5;
+			}
+		}
+	</script>
+	<script> <!-->Script for progress bar managment at paragraph "Books & Audiobooks": increase value<-->
+		function nextStep(progressBar) {
+			if(document.getElementById(progressBar).value < 100) {
+				document.getElementById(progressBar).value +=5;
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1 align="center"><b>Nat's Web Diary</b></h1>
+		<h2></h2>
+		<h3 align="center">Hello, this is my example of web page that contains lot of info about my "to do" plans, goals, tasks and it's progress and lots of more.</h3>
+	</header>
+	<nav align="left">
+		<ul style="list-style-type:none">
+			<li>Postgraduate</li>
+			<ul style="list-style-type:none">
+				<li><a href="">English language</a></li>
+				<li><a href="">Theme for research</a></li>
+			</ul>
+			<li>Perconal</li>
+			<ul style="list-style-type:none">
+				<li><a href="">Books & Audiobooks</a></li>
+			</ul>
+			<li>WebProgramming</li>
+			<ul style="list-style-type:none">
+				<li><a href="">HTML</a></li>
+				<li><a href="">CSS</a></li>
+				<li><a href="">JavaScrypt</a></li>
+				<li></li>
+			</ul>
+			<li>Other Programming</li>
+			<ul style="list-style-type:none">
+				<li><a href="">Java</a></li>
+				<li><a href="">C++</a></li>
+			</ul>
+		</ul>
+	</nav>
+<article><h2 align="center">Books & Audiobooks</h2>
+	<p>Here are the books that I want to read or have already read or have already read.</p>
+	<table border="0">
+		<tr>
+			<td colspan="4"><b>Drew Karpyshyn</b></td>
+		</tr>
+		<tr>
+			<td>Mass Effect: Revelation (2007)</td>
+			<td><button onclick="backStep('RevelationBar')">-5%</button></td>
+			<td><progress id="RevelationBar" min="0" max="100" value="65"></progress></td>
+			<td><button onclick="nextStep('RevelationBar')">+5%</button></td>
+		<tr>
+			<td>Mass Effect: Ascension (2008)</td>
+			<td><button onclick="backStep('AscensionBar')">-5%</button></td>
+			<td><progress id="AscensionBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('AscensionBar')">+5%</button></td>
+		</tr>
+		<tr>
+			<td>Mass Effect: Retribution (2010)</td>
+			<td><button onclick="backStep('RetributionBar')">-5%</button></td>
+			<td><progress id="RetributionBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('RetributionBar')">+5%</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Vsevolod Ovchinnikov</b></td>
+		</tr>
+		<tr>
+			<td>Sakura Branch (1971)</td>
+			<td><button onclick="backStep('SakuraBranchBar')">-5%</button></td>
+			<td><progress id="SakuraBranchBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('SakuraBranchBar')">+5%</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Jean Baudrillard</b></td>
+		</tr>
+		<tr>
+			<td>Simulacra and Simulations (1981)</td>
+			<td><button onclick="backStep('SimulacraAndSimulationsBar')">-5%</button></td>
+			<td><progress id="SimulacraAndSimulationsBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('SimulacraAndSimulationsBar')">+5%</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>William Gibson</b></td>
+		</tr>
+		<tr>
+			<td>Neuromancer (1984)</td>
+			<td><button onclick="backStep('NeuromancerBar')">-5%</button></td>
+			<td><progress id="NeuromancerBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('NeuromancerBar')">+5%</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>Igor Kon</b></td>
+		</tr>
+		<tr>
+			<td>Faces and masks of homosexual love: Moonlight at dawn (2003)</td>
+			<td><button onclick="backStep('FacesAndMasksOfHomosexualLoveBar')">-5%</button></td>
+			<td><progress id="FacesAndMasksOfHomosexualLoveBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('FacesAndMasksOfHomosexualLoveBar')">+5%</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>J.R.R.Tolkien</b></td>
+		</tr>
+		<tr>
+			<td>The Hobbit. The enchanting prelude to "The Lord of the Rings" (1986)</td>
+			<td><button onclick="backStep('TheHobbitBar')">-5%</button></td>
+			<td><progress id="TheHobbitBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('TheHobbitBar')">+5%</button></td>
+		<tr>
+			<td colspan="4"><b>Jason Schreier</b></td>
+		</tr>
+		<tr>
+			<td>Blood, Sweat, and Pixels (2017)</td>
+			<td><button onclick="backStep('BloodSweatAndPixelsBar')">-5%</button></td>
+			<td><progress id="BloodSweatAndPixelsBar" min="0" max="100" value="0"></progress></td>
+			<td><button onclick="nextStep('BloodSweatAndPixelsBar')">+5%</button></td>
+		</tr>
+	</table>
+</article>
+
+<footer align="center">
+	<p>My contact info<br>
+	email: nataniflutesong@gmail.com</p>
+</footer>
+</body>
+</html>
